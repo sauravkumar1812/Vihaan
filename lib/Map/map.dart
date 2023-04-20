@@ -20,9 +20,9 @@ class MapView extends StatefulWidget {
 class _MapViewState extends State<MapView> {
   final CameraPosition _initialLocation =
       const CameraPosition(target: LatLng(28.7041, 77.1025));
-   GoogleMapController mapController;
+  late GoogleMapController mapController;
 
-   Position _currentPosition;
+  late Position _currentPosition;
   String _currentAddress = '';
 
   final startAddressController = TextEditingController();
@@ -35,7 +35,7 @@ class _MapViewState extends State<MapView> {
 
   String _startAddress = '';
   String _destinationAddress = '';
-  String _placeDistance;
+  String? _placeDistance;
   List<Location> _destinationPosition = [];
 
   var distance = 0.0;
@@ -49,14 +49,14 @@ class _MapViewState extends State<MapView> {
   final _scaffoldKey = GlobalKey<ScaffoldState>();
 
   Widget _textField({
-     TextEditingController controller,
-     FocusNode focusNode,
-    String label,
-    String hint,
-     double width,
-    Icon prefixIcon,
-    Widget suffixIcon,
-    Function(String) locationCallback,
+    required TextEditingController controller,
+    required FocusNode focusNode,
+    required String label,
+    required String hint,
+    required double width,
+    required Icon prefixIcon,
+    Widget? suffixIcon,
+    required Function(String) locationCallback,
   }) {
     return SizedBox(
       width: width * 0.8,
