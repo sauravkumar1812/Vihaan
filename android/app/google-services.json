@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "105351920228",
+    "project_id": "ferriwala-1074b",
+    "storage_bucket": "ferriwala-1074b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:105351920228:android:9b5bff324cae5473b03d71",
+        "android_client_info": {
+          "package_name": "com.example.flutter_application_1"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "105351920228-f4l00bhsdkn5jpqtf82hdflldghm14o5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDTEHERaOe7YoYGFUglc-VQsy7PGf8ASHY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "105351920228-f4l00bhsdkn5jpqtf82hdflldghm14o5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
